@@ -1,17 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &4800544246056273437
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8032912423840701921}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c0537b9c1ace2e45914e46774237f5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!136 &3118144195897106466
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -25,7 +13,19 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &4800544246056273437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8032912423840701921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0537b9c1ace2e45914e46774237f5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &507009479566540368
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -592,7 +592,7 @@ PrefabInstance:
     - target: {fileID: 8440584750414290466, guid: 45f0621cc6f45dc4bbf5ac1848bf26c3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.622728
       objectReference: {fileID: 0}
     - target: {fileID: 8440584750414290466, guid: 45f0621cc6f45dc4bbf5ac1848bf26c3,
         type: 3}
@@ -602,27 +602,27 @@ PrefabInstance:
     - target: {fileID: 8440584750414290466, guid: 45f0621cc6f45dc4bbf5ac1848bf26c3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.3087711
       objectReference: {fileID: 0}
     - target: {fileID: 8440584750414290466, guid: 45f0621cc6f45dc4bbf5ac1848bf26c3,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8440584750414290466, guid: 45f0621cc6f45dc4bbf5ac1848bf26c3,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.8069963
       objectReference: {fileID: 0}
     - target: {fileID: 8440584750414290466, guid: 45f0621cc6f45dc4bbf5ac1848bf26c3,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8440584750414290466, guid: 45f0621cc6f45dc4bbf5ac1848bf26c3,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.59055656
       objectReference: {fileID: 0}
     - target: {fileID: 8440584750414290466, guid: 45f0621cc6f45dc4bbf5ac1848bf26c3,
         type: 3}
@@ -637,7 +637,7 @@ PrefabInstance:
     - target: {fileID: 8440584750414290466, guid: 45f0621cc6f45dc4bbf5ac1848bf26c3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 107.607
       objectReference: {fileID: 0}
     - target: {fileID: 8440584750414290466, guid: 45f0621cc6f45dc4bbf5ac1848bf26c3,
         type: 3}
@@ -646,7 +646,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6299232960615144233, guid: 45f0621cc6f45dc4bbf5ac1848bf26c3,
         type: 3}
-      propertyPath: health
+      propertyPath: healthpoints
       value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
