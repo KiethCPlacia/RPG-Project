@@ -11,6 +11,7 @@ namespace RPG.Movement
         [SerializeField] Transform target;
 
         NavMeshAgent navMeshAgent;
+        Health health;
 
         private void Start() 
         {
@@ -19,7 +20,9 @@ namespace RPG.Movement
 
         void Update()
         {
-        UpdateAnimator();
+            navMeshAgent.enabled = !health.IsDead();
+            
+            UpdateAnimator();
         }
 
         public void StartMoveAction(Vector3 destination)
