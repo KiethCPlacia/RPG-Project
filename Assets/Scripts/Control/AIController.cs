@@ -11,10 +11,12 @@ namespace RPG.Control
 	public class AIController : MonoBehaviour
 	{
         [SerializeField] float chaseDistance = 5f;
-        [SerializeField] float suspicionTime = 5f;
+        [SerializeField] float suspicionTime = 3f;
         [SerializeField] PatrolPath patrolPath;
         [SerializeField] float waypointTolerance = 1f;
         [SerializeField] float waypointDwellTime = 3f;
+        [Range(0,1)]
+        [SerializeField] float patrolSpeedFraction = 0.2f;
 
         Fighter fighter;
         Health health;
@@ -78,7 +80,7 @@ namespace RPG.Control
 
             if (timeSinceArriveAtWaypoint > waypointDwellTime)
             {
-				mover.StartMoveAction(nextPosition);
+				mover.StartMoveAction(nextPosition, patrolSpeedFraction);
             }   
 		}
 
